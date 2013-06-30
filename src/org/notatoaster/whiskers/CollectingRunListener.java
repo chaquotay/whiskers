@@ -1,4 +1,4 @@
-package org.notatoaster.monitor;
+package org.notatoaster.whiskers;
 
 import org.junit.runner.notification.Failure;
 import org.junit.runner.notification.RunListener;

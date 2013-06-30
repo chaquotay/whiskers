@@ -1,4 +1,4 @@
-package org.notatoaster.monitor.probe;
+package org.notatoaster.whiskers.probe;
 
 import java.net.InetAddress;
 

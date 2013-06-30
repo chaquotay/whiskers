@@ -1,11 +1,11 @@
-package org.notatoaster.monitor;
+package org.notatoaster.whiskers;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
-import org.notatoaster.monitor.probe.HttpProbe;
-import org.notatoaster.monitor.probe.SMTPProbe;
-import org.notatoaster.monitor.probe.SMTPRequest;
+import org.notatoaster.whiskers.probe.HttpProbe;
+import org.notatoaster.whiskers.probe.SMTPProbe;
+import org.notatoaster.whiskers.probe.SMTPRequest;
 
 import java.io.IOException;
 import java.net.InetAddress;
