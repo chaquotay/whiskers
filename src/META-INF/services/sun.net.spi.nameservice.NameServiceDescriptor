@@ -1,0 +1,1 @@
+# Might be useful when we want to overrule the real DNS resolving mechanism: org.notatoaster.whiskers.nameservice.ControlledNameServiceDescriptor

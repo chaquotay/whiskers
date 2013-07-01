@@ -3,6 +3,7 @@ package org.notatoaster.whiskers;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+import org.notatoaster.whiskers.probe.DNSProbe;
 import org.notatoaster.whiskers.probe.HttpProbe;
 import org.notatoaster.whiskers.probe.SMTPProbe;
 import org.notatoaster.whiskers.probe.SMTPRequest;
@@ -23,6 +24,18 @@ public class FreeMarkerOrgTest {
 
     public FreeMarkerOrgTest() throws UnknownHostException {
         realAddress = InetAddress.getByAddress(new byte[]{46, 4, 106, 76});
+    }
+
+    @Test
+    public void testDns4() throws UnknownHostException {
+        DNSProbe probe = new DNSProbe();
+        assertTrue(probe.resolvesTo("freemarker.org", realAddress));
+    }
+
+    @Test
+    public void testDns4WWW() throws UnknownHostException {
+        DNSProbe probe = new DNSProbe();
+        assertTrue(probe.resolvesTo("www.freemarker.org", realAddress));
     }
 
     @Test

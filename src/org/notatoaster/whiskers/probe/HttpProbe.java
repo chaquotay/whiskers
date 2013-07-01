@@ -1,5 +1,6 @@
 package org.notatoaster.whiskers.probe;
 
+import net.htmlparser.jericho.Element;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.params.ClientPNames;
@@ -54,14 +55,27 @@ public class HttpProbe {
 
             int statusCode = response.getStatusLine().getStatusCode();
 
+            if(statusCode!=200)
+                return false;
+
             BasicResponseHandler handler = new BasicResponseHandler();
             String responseBody = handler.handleResponse(response);
 
-            return statusCode==200 && responseBody.contains("<title>"+title+"</title>"); // evil check
+            return getTitle(responseBody).equals(title);
         }catch (Exception ex) {
             System.out.println(ex.toString());
             return false;
         }
+    }
+
+    private String getTitle(String html) {
+        net.htmlparser.jericho.Source source = new net.htmlparser.jericho.Source(html);
+        for(Element element: source.getAllElements()) {
+            if("title".equals(element.getName())) {
+                return element.getContent().toString();
+            }
+        }
+        return "";
     }
 
     public boolean isRedirect(String url, String redirectedUrl) {
