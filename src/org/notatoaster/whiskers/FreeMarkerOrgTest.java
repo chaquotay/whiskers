@@ -42,7 +42,7 @@ public class FreeMarkerOrgTest {
     public void testIndexHtmlIsFoundWithCorrectTitle() throws IOException {
         HttpProbe httpProbe = new HttpProbe();
         httpProbe.addHost("freemarker.org", realAddress);
-        boolean found = httpProbe.isFound("http://freemarker.org/index.html","FreeMarker: Java Template Engine Library - Overview");
+        boolean found = httpProbe.isFound("http://freemarker.org/index.html","FreeMarker Java Template Engine - Overview");
         assertTrue(found);
     }
 
