@@ -11,6 +11,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.conn.BasicClientConnectionManager;
 import org.apache.http.impl.conn.DefaultClientConnectionOperator;
 import org.apache.http.impl.conn.InMemoryDnsResolver;
+import org.notatoaster.whiskers.ProbeResult;
 
 import java.net.InetAddress;
 
@@ -46,7 +47,7 @@ public class HttpProbe {
         connectionManager.addHost(host, address);
     }
 
-    public boolean isFound(String url, String title)  {
+    public ProbeResult isFound(String url, String title)  {
         DefaultHttpClient client = new DefaultHttpClient(connectionManager);
 
         try {
@@ -56,15 +57,20 @@ public class HttpProbe {
             int statusCode = response.getStatusLine().getStatusCode();
 
             if(statusCode!=200)
-                return false;
+                return ProbeResult.error("unexpected status code: " + statusCode);
 
             BasicResponseHandler handler = new BasicResponseHandler();
             String responseBody = handler.handleResponse(response);
 
-            return getTitle(responseBody).equals(title);
+            String actualTitle = getTitle(responseBody);
+            if(title.equals(actualTitle)) {
+                return ProbeResult.success();
+            } else {
+                return ProbeResult.error("unexpected title. expected: " + title + ", found: " + actualTitle);
+            }
         }catch (Exception ex) {
             System.out.println(ex.toString());
-            return false;
+            return ProbeResult.error("check failed: " +  ex.toString());
         }
     }
 
@@ -78,7 +84,7 @@ public class HttpProbe {
         return "";
     }
 
-    public boolean isRedirect(String url, String redirectedUrl) {
+    public ProbeResult isRedirect(String url, String redirectedUrl) {
         DefaultHttpClient client = new DefaultHttpClient(connectionManager);
         client.getParams().setBooleanParameter(ClientPNames.HANDLE_REDIRECTS, false);
 
@@ -87,11 +93,18 @@ public class HttpProbe {
             HttpResponse response = client.execute(get);
 
             int statusCode = response.getStatusLine().getStatusCode();
+            if(statusCode!=301) {
+                return ProbeResult.error("expected redirect status code 301, but found " + statusCode);
+            }
+
             String location = response.getFirstHeader("Location").getValue();
-            return statusCode==301 && location.equals(redirectedUrl);
+            if(location.equals(redirectedUrl)) {
+                return ProbeResult.success();
+            } else {
+                return ProbeResult.success("expected redirect to " + redirectedUrl + ", but found redirect to " + location);
+            }
         }catch (Exception ex) {
-            System.out.println(ex.toString());
-            return false;
+            return ProbeResult.error("checking redirect failed: " + ex.toString());
         }
     }
 
