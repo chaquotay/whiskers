@@ -1,10 +1,12 @@
 package org.notatoaster.whiskers.probe;
 
 import net.htmlparser.jericho.Element;
+import org.apache.http.HttpHost;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.params.ClientPNames;
 import org.apache.http.conn.ClientConnectionOperator;
+import org.apache.http.conn.routing.HttpRoute;
 import org.apache.http.conn.scheme.SchemeRegistry;
 import org.apache.http.impl.client.BasicResponseHandler;
 import org.apache.http.impl.client.DefaultHttpClient;
@@ -14,6 +16,8 @@ import org.apache.http.impl.conn.InMemoryDnsResolver;
 import org.notatoaster.whiskers.ProbeResult;
 
 import java.net.InetAddress;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class HttpProbe {
 
@@ -69,6 +73,7 @@ public class HttpProbe {
                 return ProbeResult.error("unexpected title. expected: " + title + ", found: " + actualTitle);
             }
         }catch (Exception ex) {
+            ex.printStackTrace();
             System.out.println(ex.toString());
             return ProbeResult.error("check failed: " +  ex.toString());
         }
