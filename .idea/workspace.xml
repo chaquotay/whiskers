@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/notatoaster/whiskers/FreeMarkerOrgTest2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/notatoaster/whiskers/html/HTML.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/notatoaster/whiskers/html/HTMLTagContentMatcher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/notatoaster/whiskers/http/HTTP.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/notatoaster/whiskers/Host.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/notatoaster/whiskers/http/HttpHost.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/notatoaster/whiskers/http/HttpResponseCodeMatcher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/notatoaster/whiskers/http/HttpResponseHeaderMatcher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/notatoaster/whiskers/smtp/Mail.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/notatoaster/whiskers/smtp/SmtpHost.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/notatoaster/whiskers/probe/HttpProbe.java" afterPath="$PROJECT_DIR$/src/org/notatoaster/whiskers/probe/HttpProbe.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/notatoaster/whiskers/smtp/SMTP.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/notatoaster/whiskers/smtp/SmtpResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/notatoaster/whiskers/FreeMarkerOrgTest2.java" afterPath="$PROJECT_DIR$/src/org/notatoaster/whiskers/FreeMarkerOrgTest2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/notatoaster/whiskers/html/HTML.java" afterPath="$PROJECT_DIR$/src/org/notatoaster/whiskers/html/HTML.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/notatoaster/whiskers/http/HTTP.java" afterPath="$PROJECT_DIR$/src/org/notatoaster/whiskers/http/HTTP.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/notatoaster/whiskers/smtp/SmtpHost.java" afterPath="$PROJECT_DIR$/src/org/notatoaster/whiskers/smtp/SmtpHost.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Monitor.iws" />
@@ -25,23 +20,26 @@
     <file path="/HttpProbe.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373314927310" ignored="false" />
     <file path="/Main.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1372621386701" ignored="false" />
     <file path="/MyRunListener.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1372620967962" ignored="false" />
-    <file path="/Dummy.txt" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373320331423" ignored="false" />
+    <file path="/Dummy.txt" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373391012464" ignored="false" />
     <file path="/DNSProbe.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373205257613" ignored="false" />
-    <file path="/FreeMarkerOrgTest.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373205670327" ignored="false" />
+    <file path="/FreeMarkerOrgTest.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373391041618" ignored="false" />
     <file path="/FooNameServiceDescriptor.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1372706726310" ignored="false" />
-    <file path="/fragment.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373322251631" ignored="false" />
+    <file path="/fragment.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373391704738" ignored="false" />
     <file path="/sun.net.spi.nameservice.NameServiceDescriptor" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1372707612863" ignored="false" />
     <file path="/ProbeResult.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373204820959" ignored="false" />
     <file path="/ProbeResultAssert.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373204964828" ignored="false" />
     <file path="/HttpServer.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373311943738" ignored="false" />
-    <file path="/FreeMarkerOrgTest2.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373321835313" ignored="false" />
+    <file path="/FreeMarkerOrgTest2.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373392103158" ignored="false" />
     <file path="/Host.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373322055278" ignored="false" />
     <file path="/HttpChecks.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373316433262" ignored="false" />
-    <file path="/HTML.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373319503745" ignored="false" />
+    <file path="/HTML.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373392280292" ignored="false" />
     <file path="/HTMLTagMatcher.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373319863355" ignored="false" />
-    <file path="/HTTP.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373318979873" ignored="false" />
+    <file path="/HTTP.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373392250804" ignored="false" />
     <file path="/HTMLTagContentMatcher.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373319856217" ignored="false" />
     <file path="/Mail.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373320868844" ignored="false" />
+    <file path="/SmtpHost.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373391662298" ignored="false" />
+    <file path="/SMTP.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373392313157" ignored="false" />
+    <file path="/SmtpResponse.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373392359371" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +54,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -94,6 +91,7 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -102,7 +100,106 @@
     <favorites_list name="Monitor" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="FreeMarkerOrgTest2.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/FreeMarkerOrgTest2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="13" selection-start="621" selection-end="621" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FreeMarkerOrgTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/FreeMarkerOrgTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="67" column="4" selection-start="2538" selection-end="2866" vertical-scroll-proportion="1.3353474">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SmtpHost.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/smtp/SmtpHost.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="31" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SmtpResponse.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/smtp/SmtpResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="63" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mail.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/smtp/Mail.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="10" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DNSProbe.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/probe/DNSProbe.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="13" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SMTP.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/smtp/SMTP.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="62" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HTTP.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/http/HTTP.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="30" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HTML.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/html/HTML.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="53" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpHost.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/http/HttpHost.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="32" selection-start="734" selection-end="734" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -121,30 +218,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/HttpResultCheck.java" />
-        <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/HttpResult.java" />
-        <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/HttpChecks.java" />
         <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/HTML.java" />
-        <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/http/HTTP.java" />
         <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/probe/HttpProbe.java" />
-        <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/html/HTML.java" />
         <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/html/HTMLTagMatcher.java" />
         <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/html/HTMLTagContentMatcher.java" />
         <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/smtp/Mail.java" />
         <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/http/Host.java" />
-        <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/FreeMarkerOrgTest2.java" />
         <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/http/HttpResponseCodeMatcher.java" />
         <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/http/HttpResponseHeaderMatcher.java" />
         <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/http/HttpHost.java" />
+        <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/FreeMarkerOrgTest.java" />
         <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/smtp/SmtpHost.java" />
+        <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/FreeMarkerOrgTest2.java" />
+        <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/http/HTTP.java" />
+        <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/html/HTML.java" />
+        <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/smtp/SMTP.java" />
+        <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/smtp/SmtpResponse.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1912" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1216" />
+    <option name="height" value="1176" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -172,6 +269,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -339,7 +437,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -388,29 +485,7 @@
       <recent name="C:\Users\Chaquotay\Projects\whiskers\META-INF\services" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FreeMarkerOrgTest2 and 1 more">
-    <configuration default="false" name="FreeMarkerOrgTest.testIndexHtmlIsFoundWithCorrectTitle" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="WSKRS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.notatoaster.whiskers" />
-      <option name="MAIN_CLASS_NAME" value="org.notatoaster.whiskers.FreeMarkerOrgTest" />
-      <option name="METHOD_NAME" value="testIndexHtmlIsFoundWithCorrectTitle" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.FreeMarkerOrgTest2">
     <configuration default="false" name="FreeMarkerOrgTest2" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="WSKRS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -506,6 +581,28 @@
         <pattern testClass="org.notatoaster.whiskers.FreeMarkerOrgTest2" />
         <pattern testClass="org.notatoaster.whiskers.FreeMarkerOrgTest" />
       </patterns>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="FreeMarkerOrgTest2.testNotFound" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="WSKRS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.notatoaster.whiskers" />
+      <option name="MAIN_CLASS_NAME" value="org.notatoaster.whiskers.FreeMarkerOrgTest2" />
+      <option name="METHOD_NAME" value="testNotFound" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
@@ -628,19 +725,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.FreeMarkerOrgTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.FreeMarkerOrgTest.testIndexHtmlIsFoundWithCorrectTitle" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.FreeMarkerOrgTest2" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.FreeMarkerOrgTest2.testRedirect" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.FreeMarkerOrgTest2.testIndexHtmlIsFoundWithCorrectTitle" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.FreeMarkerOrgTest2 and 1 more" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.FreeMarkerOrgTest2" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.FreeMarkerOrgTest2.testRedirect" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.FreeMarkerOrgTest2.testIndexHtmlIsFoundWithCorrectTitle" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.FreeMarkerOrgTest2 and 1 more" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.FreeMarkerOrgTest2.testNotFound" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.FreeMarkerOrgTest2 and 1 more" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.FreeMarkerOrgTest2" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.FreeMarkerOrgTest2.testIndexHtmlIsFoundWithCorrectTitle" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.FreeMarkerOrgTest2.testRedirect" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.FreeMarkerOrgTest.testIndexHtmlIsFoundWithCorrectTitle" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.FreeMarkerOrgTest2" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FreeMarkerOrgTest2.testNotFound" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.FreeMarkerOrgTest2 and 1 more" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.FreeMarkerOrgTest2.testIndexHtmlIsFoundWithCorrectTitle" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.FreeMarkerOrgTest2.testRedirect" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -692,20 +789,23 @@
       <created>1373200233757</created>
       <updated>1373200233757</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Created alternative to &quot;probes&quot;: hamcrest matchers and some fluent interface style helper classes, which allows for more readable tests like&#10;Host server = Host.create(address);&#10;assertThat(&#10;                server.http().get(&quot;www.freemarker.org&quot;, &quot;/index.html&quot;),&#10;                is(redirectTo(&quot;http://freemarker.org/index.html&quot;)));">
+      <created>1373322570572</created>
+      <updated>1373322570572</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1216" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295562" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39754486" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32577905" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32482827" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32875368" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32580963" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -713,10 +813,11 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20330843" sideWeight="0.674221" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32577905" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20330843" sideWeight="0.67517173" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32482827" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295562" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -763,7 +864,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed library URLs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created alternative to &quot;probes&quot;: hamcrest matchers and some fluent interface style helper classes, which allows for more readable tests like&#10;Host server = Host.create(address);&#10;assertThat(&#10;                server.http().get(&quot;www.freemarker.org&quot;, &quot;/index.html&quot;),&#10;                is(redirectTo(&quot;http://freemarker.org/index.html&quot;)));" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -781,6 +882,7 @@
     <MESSAGE value="Renamed package." />
     <MESSAGE value="Changed bad .name file which caused IntelliJ to not being able to compile the project" />
     <MESSAGE value="Fixed library URLs" />
+    <MESSAGE value="Created alternative to &quot;probes&quot;: hamcrest matchers and some fluent interface style helper classes, which allows for more readable tests like&#10;Host server = Host.create(address);&#10;assertThat(&#10;                server.http().get(&quot;www.freemarker.org&quot;, &quot;/index.html&quot;),&#10;                is(redirectTo(&quot;http://freemarker.org/index.html&quot;)));" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -790,77 +892,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/lib/hamcrest-core-1.3.jar!/org/hamcrest/CoreMatchers.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="47" selection-start="3771" selection-end="3771" vertical-scroll-proportion="-0.46461537">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/httpcore-4.2.2.jar!/org/apache/http/HttpResponse.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="162" selection-end="162" vertical-scroll-proportion="0.12820514">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/probe/SMTPRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/FreeMarkerOrgTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="47" selection-start="1228" selection-end="1228" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/probe/HttpProbe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="8" selection-start="3358" selection-end="3435" vertical-scroll-proportion="0.76598835">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/smtp/Mail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="28" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/probe/SMTPProbe.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="39" selection-start="310" selection-end="1392" vertical-scroll-proportion="0.76598835">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/FreeMarkerOrgTest2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="1854" selection-end="1854" vertical-scroll-proportion="0.8023256">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/http/HttpResponseCodeMatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="148" selection-end="148" vertical-scroll-proportion="0.09883721">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/http/HTTP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="689" selection-end="689" vertical-scroll-proportion="0.59302324">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -880,9 +915,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/commons-net-3.2.jar!/org/apache/commons/net/smtp/SMTPReply.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="28" selection-start="362" selection-end="362" vertical-scroll-proportion="0.24018839">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/http/HttpResponseCodeMatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="148" selection-end="148" vertical-scroll-proportion="0.10271903">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/Host.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="24" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/smtp/SmtpHost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="31" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/http/HTTP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="30" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/html/HTML.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="32" selection-start="225" selection-end="225" vertical-scroll-proportion="0.19767442">
+        <state line="6" column="53" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -891,24 +965,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/http/HttpHost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="32" selection-start="734" selection-end="734" vertical-scroll-proportion="0.12354651">
+        <state line="19" column="32" selection-start="734" selection-end="734" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/smtp/SmtpHost.java">
+    <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/smtp/SMTP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="237" selection-end="237" vertical-scroll-proportion="0.09883721">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/Host.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="21" selection-start="546" selection-end="546" vertical-scroll-proportion="0.6540698">
+        <state line="8" column="62" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/smtp/SmtpResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="63" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/smtp/Mail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="10" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/probe/DNSProbe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/FreeMarkerOrgTest2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="13" selection-start="621" selection-end="621" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/notatoaster/whiskers/FreeMarkerOrgTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="4" selection-start="2538" selection-end="2866" vertical-scroll-proportion="1.3353474">
+          <folding />
         </state>
       </provider>
     </entry>
