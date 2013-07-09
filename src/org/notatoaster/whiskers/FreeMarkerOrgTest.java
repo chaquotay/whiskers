@@ -3,89 +3,89 @@ package org.notatoaster.whiskers;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
-import org.notatoaster.whiskers.probe.DNSProbe;
-import org.notatoaster.whiskers.probe.HttpProbe;
-import org.notatoaster.whiskers.probe.SMTPProbe;
-import org.notatoaster.whiskers.probe.SMTPRequest;
+import org.notatoaster.whiskers.dns.DnsServer;
+import org.notatoaster.whiskers.html.HTML;
+import org.notatoaster.whiskers.smtp.Mail;
+import org.notatoaster.whiskers.smtp.SMTP;
+import org.xbill.DNS.TextParseException;
+import org.xbill.DNS.Type;
 
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static org.notatoaster.whiskers.ProbeResultAssert.assertError;
-import static org.notatoaster.whiskers.ProbeResultAssert.assertSuccess;
+import static org.hamcrest.CoreMatchers.allOf;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.notatoaster.whiskers.dns.DNS.address;
+import static org.notatoaster.whiskers.http.HTTP.*;
+
 
 @RunWith(JUnit4.class)
 public class FreeMarkerOrgTest {
 
-    private final InetAddress realAddress;
-    private final InetAddress localhostAddress = InetAddress.getByAddress(new byte[]{127, 0, 0, 1});
+    private final Host server;
+    private final InetAddress serverAddress;
 
     public FreeMarkerOrgTest() throws UnknownHostException {
-        realAddress = InetAddress.getByAddress(new byte[]{46, 4, 106, 76});
+        serverAddress = InetAddress.getByAddress(new byte[]{46, 4, 106, 76});
+        server = Host.create(serverAddress);
     }
 
     @Test
-    public void testDns4() throws UnknownHostException {
-        DNSProbe probe = new DNSProbe();
-        ProbeResult result = probe.resolvesTo("freemarker.org", realAddress);
-        assertSuccess(result);
+    public void testDnsA() throws UnknownHostException, TextParseException {
+        InetAddress googleDNSaddress = InetAddress.getByAddress(new byte[]{8,8,8,8});
+        DnsServer googleDNS = new DnsServer(googleDNSaddress);
+
+        assertThat(
+                googleDNS.resolve("freemarker.org", Type.A),
+                is(address(serverAddress))
+        );
     }
 
     @Test
-    public void testDns4WWW() throws UnknownHostException {
-        DNSProbe probe = new DNSProbe();
-        ProbeResult result = probe.resolvesTo("www.freemarker.org", realAddress);
-        assertSuccess(result);
+    public void testDnsAWww() throws UnknownHostException, TextParseException {
+        InetAddress googleDNSaddress = InetAddress.getByAddress(new byte[]{8,8,8,8});
+        DnsServer googleDNS = new DnsServer(googleDNSaddress);
+
+        assertThat(
+                googleDNS.resolve("www.freemarker.org", Type.A),
+                is(address(serverAddress))
+        );
     }
 
     @Test
-    public void testIndexHtmlIsFoundWithCorrectTitle() throws IOException {
-        HttpProbe httpProbe = new HttpProbe();
-        httpProbe.addHost("freemarker.org", realAddress);
-        ProbeResult result = httpProbe.isFound("http://freemarker.org/index.html","FreeMarker Java Template Engine - Overview");
-        assertSuccess(result);
+    public void testIndexHtmlHasExpectedTitle() throws IOException {
+        assertThat(
+                server.http().get("freemarker.org", "/index.html"),
+                allOf(
+                        is(success()),
+                        HTML.hasTitle("FreeMarker Java Template Engine - Overview")
+                )
+        );
     }
 
     @Test
-    public void testIndexHtmlIsFoundWithWWWRedirect() throws IOException {
-        HttpProbe httpProbe = new HttpProbe();
-        httpProbe.addHost("www.freemarker.org", realAddress);
-        ProbeResult result = httpProbe.isRedirect("http://www.freemarker.org/index.html", "http://freemarker.org/index.html");
-        assertSuccess(result);
+    public void testHttpNotFound() throws IOException {
+        assertThat(
+                server.http().get("freemarker.org", "/test-not-existing-foo-file-20130709.html"),
+                is(notFound())
+        );
     }
 
     @Test
-    public void testIndexHtmlIsNotFoundWithWrongHost() throws IOException {
-        HttpProbe httpProbe = new HttpProbe();
-        httpProbe.addHost("notatoaster.org", realAddress);
-        ProbeResult result = httpProbe.isFound("http://notatoaster.org/index.html","FreeMarker: Java Template Engine Library - Overview");
-        assertError(result);
+     public void testHttpRedirect() throws IOException {
+        assertThat(
+                server.http().get("www.freemarker.org", "/index.html"),
+                is(redirectTo("http://freemarker.org/index.html"))
+        );
     }
 
     @Test
-    public void testIndexHtmlIsNotFoundWithWrongTitle() throws IOException {
-        HttpProbe httpProbe = new HttpProbe();
-        httpProbe.addHost("freemarker.org", realAddress);
-        ProbeResult result = httpProbe.isFound("http://freemarker.org/index.html","Something different");
-        assertError(result);
-    }
-
-    @Test
-    public void testNothingIsFoundOnWrongServer() throws IOException {
-        HttpProbe httpProbe = new HttpProbe();
-        httpProbe.addHost("freemarker.org", localhostAddress);
-        ProbeResult result = httpProbe.isFound("http://freemarker.org/index.html","FreeMarker: Java Template Engine Library - Overview");
-        assertError(result);
-    }
-
-    @Test
-    public void testSmtpReceivesMail() throws IOException {
-        SMTPRequest req = new SMTPRequest(realAddress, 25,"freemarker.org","abuse@freemarker.org");
-        SMTPProbe probe = new SMTPProbe();
-        ProbeResult result = probe.probe(req);
-        assertSuccess(result);
+    public void testSmtp() throws IOException {
+        assertThat(
+                server.smtp().send("freemarker.org", new Mail("<test@chaquotay.net>","abuse@freemarker.org")),
+                is(SMTP.noError())
+        );
     }
 }

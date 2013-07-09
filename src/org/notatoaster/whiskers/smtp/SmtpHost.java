@@ -9,15 +9,13 @@ import java.net.InetAddress;
 public class SmtpHost {
     private InetAddress address;
     private int port;
-    private String domain;
 
-    public SmtpHost(InetAddress address, int port, String domain) {
+    public SmtpHost(InetAddress address, int port) {
         this.address = address;
         this.port = port;
-        this.domain = domain;
     }
 
-    public SmtpResponse send(Mail mail) throws IOException {
+    public SmtpResponse send(String domain, Mail mail) throws IOException {
         SMTPClient client = new SMTPClient();
         client.connect(address, port);
         try {

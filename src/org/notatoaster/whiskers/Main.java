@@ -25,7 +25,7 @@ public class Main {
             }
             System.out.println(msg.toString());
         } else {
-            System.out.println("No failures!");
+            System.out.println("No failures! (" + clr.getRun() + ")");
         }
     }
 }

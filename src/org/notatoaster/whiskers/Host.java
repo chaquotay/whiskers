@@ -22,12 +22,12 @@ public class Host {
         return new HttpHost(address, port);
     }
 
-    public SmtpHost smtp(String domain) {
-        return smtp(domain, 25);
+    public SmtpHost smtp() {
+        return smtp(25);
     }
 
-    public SmtpHost smtp(String domain, int port) {
-        return new SmtpHost(address, port, domain);
+    public SmtpHost smtp(int port) {
+        return new SmtpHost(address, port);
     }
 
     public static Host create(InetAddress address) {
