@@ -11,6 +11,7 @@
     <orderEntry type="library" name="junit:junit:4.11" level="project" />
     <orderEntry type="library" name="org.apache.httpcomponents:httpclient:4.2.2" level="project" />
     <orderEntry type="library" name="net.htmlparser.jericho:jericho-html:3.3" level="project" />
+    <orderEntry type="library" name="org.xbill:dnsjava:2.0.8" level="project" />
   </component>
 </module>
 

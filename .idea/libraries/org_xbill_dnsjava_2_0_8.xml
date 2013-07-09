@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="org.xbill:dnsjava:2.0.8" type="repository">
+    <properties maven-id="org.xbill:dnsjava:2.0.8" />
+    <CLASSES>
+      <root url="jar://$APPLICATION_HOME_DIR$/bin/lib/dnsjava-2.0.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
