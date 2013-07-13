@@ -10,7 +10,6 @@ public class MailNotifier implements Notifier
 
     public MailNotifier(MailClient mailClient, String from, String to) {
         this.mailClient = mailClient;
-
         this.from = from;
         this.to = to;
     }
