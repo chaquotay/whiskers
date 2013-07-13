@@ -22,22 +22,22 @@ public class SmtpHost {
             int replyCode = client.getReplyCode();
             if (!SMTPReply.isPositiveCompletion(replyCode))
                 return new SmtpResponse(replyCode);
-                //return ProbeResult.error("SMTP connect failed with reply code " + replyCode);
+                //return error("SMTP connect failed with reply code " + replyCode);
 
             replyCode = client.helo(domain);
             if (!SMTPReply.isPositiveCompletion(replyCode))
                 return new SmtpResponse(replyCode);
-                //return ProbeResult.error("SMTP HELO failed with reply code " + replyCode);
+                //return error("SMTP HELO failed with reply code " + replyCode);
 
             replyCode = client.mail(mail.getFrom());
             if (!SMTPReply.isPositiveCompletion(replyCode))
                 return new SmtpResponse(replyCode);
-                //return ProbeResult.error("SMTP MAIL FROM failed with reply code " + replyCode);
+                //return error("SMTP MAIL FROM failed with reply code " + replyCode);
 
             replyCode = client.rcpt(mail.getTo());
             if (!SMTPReply.isPositiveCompletion(replyCode))
                 return new SmtpResponse(replyCode);
-                //return ProbeResult.error("SMTP RCTP TO failed with reply code " + replyCode);
+                //return error("SMTP RCTP TO failed with reply code " + replyCode);
 
             client.quit();
 
