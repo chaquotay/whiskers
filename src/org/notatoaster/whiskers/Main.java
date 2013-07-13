@@ -1,13 +1,36 @@
 package org.notatoaster.whiskers;
 
+import org.apache.commons.cli.*;
 import org.junit.runner.notification.Failure;
 import org.junit.runner.notification.RunNotifier;
 import org.junit.runners.JUnit4;
 import org.junit.runners.model.InitializationError;
+import org.notatoaster.whiskers.notification.MailClient;
+import org.notatoaster.whiskers.notification.MailNotifier;
+import org.notatoaster.whiskers.notification.Notification;
+import org.notatoaster.whiskers.notification.Notifier;
+import org.notatoaster.whiskers.util.PropertiesUtil;
+
+import java.io.IOException;
+import java.nio.file.FileSystems;
+import java.nio.file.Path;
+import java.util.Properties;
 
 public class Main {
 
-    public static void main(String[] args) throws InitializationError {
+    public static void main(String[] args) throws InitializationError, IOException, ParseException {
+        CommandLine cl = parseCommandLine(args);
+        String configFile = cl.getOptionValue('f', "");
+
+        if ("".equals(configFile)) {
+            System.err.println("No config file specified!");
+            return;
+        }
+
+        Path path = FileSystems.getDefault().getPath(configFile);
+        System.out.println("Using config file " + path);
+        Properties props = PropertiesUtil.loadPropertiesFile(path);
+
         JUnit4 runner = new JUnit4(FreeMarkerOrgTest.class);
         RunNotifier notifier = new RunNotifier();
         CollectingRunListener clr = new CollectingRunListener();
@@ -24,8 +47,29 @@ public class Main {
                 msg.append("\r\n");
             }
             System.out.println(msg.toString());
+            Notifier n = createNotifier(props);
+            Notification x = new Notification(msg.toString());
+            n.send(x);
         } else {
             System.out.println("No failures! (" + clr.getRun() + ")");
         }
+    }
+
+    private static CommandLine parseCommandLine(String[] args) throws ParseException {
+        CommandLineParser parser = new BasicParser();
+        return parser.parse(createOptions(), args);
+    }
+
+    private static Options createOptions() {
+        Options opts = new Options();
+        opts.addOption("f", "file", true, "configuration file");
+        return opts;
+    }
+
+    private static Notifier createNotifier(Properties properties) throws IOException {
+        MailClient mailClient = new MailClient(properties);
+        String from = properties.getProperty("notify.mail.from");
+        String to = properties.getProperty("notify.mail.to");
+        return new MailNotifier(mailClient,from,to);
     }
 }
