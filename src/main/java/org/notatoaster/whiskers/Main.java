@@ -4,6 +4,7 @@ import org.apache.commons.cli.*;
 import org.junit.runner.notification.Failure;
 import org.junit.runner.notification.RunNotifier;
 import org.junit.runners.JUnit4;
+import org.junit.runners.Parameterized;
 import org.junit.runners.model.InitializationError;
 import org.notatoaster.whiskers.notification.MailClient;
 import org.notatoaster.whiskers.notification.MailNotifier;
@@ -18,7 +19,7 @@ import java.util.Properties;
 
 public class Main {
 
-    public static void main(String[] args) throws InitializationError, IOException, ParseException {
+    public static void main(String[] args) throws Throwable {
         CommandLine cl = parseCommandLine(args);
         String configFile = cl.getOptionValue('f', "");
 
@@ -33,11 +34,13 @@ public class Main {
         System.out.println("Using config file " + path);
         Properties props = PropertiesUtil.loadPropertiesFile(path);
 
-        JUnit4 runner = new JUnit4(FreeMarkerOrgTest.class);
         RunNotifier notifier = new RunNotifier();
         CollectingRunListener clr = new CollectingRunListener();
         notifier.addListener(clr);
-        runner.run(notifier);
+
+        runTest(notifier, FreeMarkerOrgTest.class);
+        runParameterizedTest(notifier, FreeMarkerOrgDnsTest.class);
+
         int failureCount = clr.getFailures().size();
         if(failureCount!=0 || notifySuccess) {
             StringBuilder msg = new StringBuilder();
@@ -55,6 +58,16 @@ public class Main {
         } else {
             System.out.println("No failures! (" + clr.getRun() + ")");
         }
+    }
+
+    private static void runTest(RunNotifier notifier, Class<?> klass) throws InitializationError {
+        JUnit4 runner = new JUnit4(klass);
+        runner.run(notifier);
+    }
+
+    private static void runParameterizedTest(RunNotifier notifier, Class<?> klass) throws Throwable {
+        Parameterized runner = new Parameterized(klass);
+        runner.run(notifier);
     }
 
     private static CommandLine parseCommandLine(String[] args) throws ParseException {
