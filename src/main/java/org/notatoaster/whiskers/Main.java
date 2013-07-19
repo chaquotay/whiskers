@@ -27,6 +27,8 @@ public class Main {
             return;
         }
 
+        boolean notifySuccess = cl.hasOption('s');
+
         Path path = FileSystems.getDefault().getPath(configFile);
         System.out.println("Using config file " + path);
         Properties props = PropertiesUtil.loadPropertiesFile(path);
@@ -37,7 +39,7 @@ public class Main {
         notifier.addListener(clr);
         runner.run(notifier);
         int failureCount = clr.getFailures().size();
-        if(failureCount!=0) {
+        if(failureCount!=0 || notifySuccess) {
             StringBuilder msg = new StringBuilder();
             msg.append(failureCount);
             msg.append(" failures occurred!\r\n");
@@ -63,6 +65,7 @@ public class Main {
     private static Options createOptions() {
         Options opts = new Options();
         opts.addOption("f", "file", true, "configuration file");
+        opts.addOption("s", "success", false, "also notify about success");
         return opts;
     }
 

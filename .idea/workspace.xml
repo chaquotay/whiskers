@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/example.properties" />
+    <list default="true" id="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" name="Default" comment="Added example properties file.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/Main.java" afterPath="$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Monitor.iws" />
@@ -13,11 +13,11 @@
     <file path="/PingProbe.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1372104695535" ignored="false" />
     <file path="/a.dummy" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373393118588" ignored="false" />
     <file path="/HttpProbe.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373314927310" ignored="false" />
-    <file path="/Main.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373744768102" ignored="false" />
+    <file path="/Main.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1374271191551" ignored="false" />
     <file path="/MyRunListener.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1372620967962" ignored="false" />
-    <file path="/Dummy.txt" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1374266700909" ignored="false" />
+    <file path="/Dummy.txt" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1374270860779" ignored="false" />
     <file path="/DNSProbe.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373205257613" ignored="false" />
-    <file path="/FreeMarkerOrgTest.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1374266350380" ignored="false" />
+    <file path="/FreeMarkerOrgTest.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1374269589203" ignored="false" />
     <file path="/FooNameServiceDescriptor.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1372706726310" ignored="false" />
     <file path="/fragment.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373744957010" ignored="false" />
     <file path="/sun.net.spi.nameservice.NameServiceDescriptor" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1372707612863" ignored="false" />
@@ -43,7 +43,7 @@
     <file path="/MailNotifier.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373737014948" ignored="false" />
     <file path="/MailClient.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373737442563" ignored="false" />
     <file path="/PropertiesUtil.java" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373743751573" ignored="false" />
-    <file path="/freemarker.properties" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373744322696" ignored="false" />
+    <file path="/freemarker.properties" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1374268315192" ignored="false" />
     <file path="/.gitignore" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1373803607543" ignored="false" />
     <file path="/example.properties" changelist="52e76d2b-8ca1-48f3-bdbb-1f83372f3745" time="1374266661439" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -110,7 +110,7 @@
       <file leaf-file-name="FreeMarkerOrgTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/FreeMarkerOrgTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="24" selection-start="2759" selection-end="2759" vertical-scroll-proportion="0.0">
+            <state line="26" column="38" selection-start="900" selection-end="900" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,46 +118,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HttpHost.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/http/HttpHost.java">
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="55" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.0">
+            <state line="29" column="47" selection-start="1056" selection-end="1056" vertical-scroll-proportion="0.38636363">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="freemarker.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/freemarker.properties">
+      <file leaf-file-name="Mail.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/smtp/Mail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="38" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
+            <state line="20" column="5" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="example.properties" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/example.properties">
+      <file leaf-file-name="MailClient.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/notification/MailClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="33" selection-start="281" selection-end="281" vertical-scroll-proportion="0.25641027">
+            <state line="23" column="71" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MailNotifier.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/notification/MailNotifier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="0" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HTTP.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/http/HTTP.java">
+      <file leaf-file-name="Notification.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/notification/Notification.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="8" selection-start="8" selection-end="37" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="16" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0">
+            <state line="12" column="23" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -182,8 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/dns/DNS.java" />
-        <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/Host.java" />
         <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/FreeMarkerOrgTest2.java" />
         <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/CollectingRunListener.java" />
         <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/notification/Notification.java" />
@@ -196,8 +196,10 @@
         <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/notification/MailNotifier.java" />
         <option value="$PROJECT_DIR$/src/org/notatoaster/whiskers/notification/MailClient.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/FreeMarkerOrgTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/example.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/freemarker.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/FreeMarkerOrgTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/Main.java" />
       </list>
     </option>
   </component>
@@ -240,6 +242,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="WSKRS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -300,6 +306,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WSKRS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="whiskers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="whiskers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WSKRS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="whiskers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -307,23 +357,23 @@
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="57" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="61" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="46" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="54" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="103" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="105" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="332" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="608" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="443" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="100" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="95" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="201" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="601" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="605" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="103" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="97" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
@@ -672,7 +722,11 @@
       <created>1374266499643</created>
       <updated>1374266499643</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added example properties file.">
+      <created>1374266720633</created>
+      <updated>1374266720633</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -705,15 +759,15 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32875368" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39744848" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3238469" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32679096" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32713026" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3238469" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32679096" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3238469" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973504" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20330843" sideWeight="0.67615306" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20330843" sideWeight="0.673209" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32482827" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -802,55 +856,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/CollectingRunListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/smtp/SmtpHost.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="44" selection-start="772" selection-end="772" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/util/PropertiesUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="54" selection-start="423" selection-end="423" vertical-scroll-proportion="0.35951662" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="34" selection-start="2126" selection-end="2126" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/notification/MailNotifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="482" selection-end="482" vertical-scroll-proportion="0.5175038" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/notification/Notification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="25" selection-start="61" selection-end="73" vertical-scroll-proportion="0.05175038" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/notification/Notifier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="48" selection-start="126" selection-end="126" vertical-scroll-proportion="0.12937595" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/notification/MailClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="153" selection-end="153" vertical-scroll-proportion="0.12937595" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/Host.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="24" selection-start="448" selection-end="448" vertical-scroll-proportion="0.5607903">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -867,18 +880,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/FreeMarkerOrgTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="24" selection-start="2759" selection-end="2759" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/http/HttpHost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="55" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.0">
+        <state line="40" column="55" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.25679758">
           <folding />
         </state>
       </provider>
@@ -890,16 +894,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/Host.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="26" selection-start="347" selection-end="347" vertical-scroll-proportion="0.4365559">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/freemarker.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="38" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
+        <state line="10" column="52" selection-start="311" selection-end="311" vertical-scroll-proportion="0.25757575">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/example.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="33" selection-start="281" selection-end="281" vertical-scroll-proportion="0.25641027">
+        <state line="10" column="33" selection-start="281" selection-end="281" vertical-scroll-proportion="0.25757575">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/FreeMarkerOrgTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="38" selection-start="900" selection-end="900" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/smtp/Mail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="5" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/notification/MailClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="71" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/notification/MailNotifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/notification/Notification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="23" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/notatoaster/whiskers/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="47" selection-start="1056" selection-end="1056" vertical-scroll-proportion="0.38636363">
           <folding />
         </state>
       </provider>
