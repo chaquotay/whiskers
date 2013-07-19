@@ -9,7 +9,6 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.conn.BasicClientConnectionManager;
 import org.apache.http.impl.conn.DefaultClientConnectionOperator;
 import org.apache.http.impl.conn.InMemoryDnsResolver;
-import org.notatoaster.whiskers.Host;
 
 import java.net.InetAddress;
 

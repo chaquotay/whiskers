@@ -18,7 +18,9 @@ import static org.hamcrest.CoreMatchers.allOf;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.notatoaster.whiskers.dns.DNS.address;
-import static org.notatoaster.whiskers.http.HTTP.*;
+import static org.notatoaster.whiskers.http.HTTP.notFound;
+import static org.notatoaster.whiskers.http.HTTP.redirectTo;
+import static org.notatoaster.whiskers.http.HTTP.success;
 
 
 @RunWith(JUnit4.class)
